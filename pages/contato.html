@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Safira Digital</title>
+    <meta name="description" content="Entre em contato com a Safira Digital para orçamentos e projetos de desenvolvimento de software.">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/Logo.png" alt="Safira Digital" class="logo-img">
+                <span>Safira Digital</span>
+                </a>
+                <nav class="nav">
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html" class="active">Contato</a>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Vamos conversar</h1>
+                <p>Descreva seu projeto e receba uma proposta em até 24 horas.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulário -->
+                     <div class="contact-form">
+                        <h2 style="margin-bottom: 1.5rem;">Envie sua proposta</h2>
+
+                        <form id="contactForm" action="https://formspree.io/f/meeobbrq" method="POST">
+                            <input type="text" name="name" placeholder="Nome Completo" required>
+                            <input type="email" name="email" placeholder="Email profissional" required>
+                            <input type="tel" name="phone" placeholder="WhatsApp (opcional)">
+                            <input type="text" name="_gotcha" style="display:none">
+                        
+                            <select name="projectType" required>
+                                <option value="">Tipo de projeto</option>
+                                <option value="site">Site institucional</option>
+                                <option value="app">Aplicativo mobile</option>
+                                <option value="ecommerce">Loja virtual</option>
+                                <option value="sistema">Sistema web</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <textarea name="message" placeholder="Descreva seu projeto em detalhes. Ex: 'Preciso de um site para meu restaurante com cardápio online, sistema de reservas e integração com WhatsApp.'" rows="5" required></textarea>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Enviar proposta
+                            </button>
+                            <small style="color:var(--gray);">
+                                <br>Seus dados não serão compartilhados.
+                            </small>
+                        </form>
+                     </div>
+                     <!--Informações-->
+                     <div class="contact-info">
+                        <h2 style="margin-bottom: 1.5rem;">Outras formas de contato</h2>
+
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:leonildogomes.dev@outlook.com">leonildogomes.dev@outlook.com</a>
+                                <p>Resposta em até 24h úteis</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/5511999999999" target="_blank">+55 (11) 99999-9999</a>
+                                <p>Atendimento 9h-18h (seg-sex)</p>
+                            </div>
+                        </div>
+                         <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/Arcano5" target="_blank">github.com/Arcano5</a>
+                                <p>Veja nosso código</p>
+                            </div>
+                        </div>
+                        <!-- FAQ -->
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--dark-border);">
+                            <h3 style="margin-bottom: 1rem;">Perguntas frequentes</h3>
+                            
+                            <details style="margin-bottom: 0.5rem;">
+                                <summary>Qual o prazo médio?</summary>
+                                <p>Sites: 2-4 semanas • Apps: 4-8 semanas • Jogos: 6-12 semanas</p>
+                            </details>
+                            
+                            <details style="margin-bottom: 0.5rem;">
+                                <summary>Formas de pagamento?</summary>
+                                <p>50% no início, 50% na entrega. Aceitamos PIX e transferência.</p>
+                            </details>
+                            
+                            <details style="margin-bottom: 0.5rem;">
+                                <summary>Tem suporte pós-entrega?</summary>
+                                <p>Sim, 30 dias de suporte gratuito + pacotes mensais opcionais.</p>
+                            </details>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" style="text-align: center; background: var(--dark-card);">
+            <div class="container">
+                <h2 class="section-title">Prefere uma call?</h2>
+                <p style="margin-bottom: 1.5rem;">Agende uma conversa de 30 minutos para discutir seu projeto.</p>
+                <a href="https://calendly.com/safiradigital" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Agendar call (30min)
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="index.html" class="logo-link">
+                        <img src="../images/Logo.png" alt="Safira Digital" class="logo-img">
+                        <span>Safira Digital</span>
+                    </a>
+                    <p style="margin-top: 1rem; color:var(--gray);">Software inteligente desde 2026</p>
+                </div>
+                <div class="footer-links">
+                    <a href="servicos.html">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="#" id="themeToggle"><i class="fas fa-moon"></i> Modo claro</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Safira Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
