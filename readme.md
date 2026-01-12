@@ -5,3 +5,8 @@ Tecnologias usadas:
     CSS3: Aparência;
     JavaScript ECMAScript: Funcionalidades;e
     Formspree: EndPoint dos formulários.
+
+
+Segunda versão
+
+    Google Analytics para monitorar índices
