@@ -40,3 +40,6 @@ A performance do site foi analisada utilizando o Lighthouse do Chrome DevTools, 
 
 ### Conclusão
 As melhorias com maior impacto foram a otimização das imagens e a redução de recursos bloqueantes, resultando em uma experiência mais rápida e estável para o usuário.
+
+
+Durante as otimizações iniciais, observou-se uma piora na pontuação de Performance devido ao aumento do Cumulative Layout Shift (CLS), causado principalmente por lazy loading aplicado indevidamente e animações não otimizadas. Após a correção desses pontos, houve estabilização do layout e melhoria significativa da experiência do usuário.
