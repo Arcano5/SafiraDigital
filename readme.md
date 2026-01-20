@@ -35,7 +35,7 @@ A performance do site foi analisada utilizando o Lighthouse do Chrome DevTools, 
 - Organização do CSS em arquivos distintos para homepage e páginas internas
 
 ### Resultados após otimização
-- Performance: XX (após otimizações)
+- Performance: 88 (após otimizações)
 - Redução do tempo de First Contentful Paint e Largest Contentful Paint
 
 ### Conclusão
