@@ -2,41 +2,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     setupMobileMenu();
     setupThemeToggle();
     setupCurrentPage();
-    // REMOVA esta linha: setupContactForm();
-    
-    // Se existir formulário, carrega o contact.js
-    if (document.getElementById('contactForm')) {
-        // Se contact.js já foi carregado, executa
-        if (typeof setupContactForm === 'function') {
-            setupContactForm();
-        }
-        // Se não, carrega o arquivo
-        else {
-            loadScript('contact.js', function() {
-                if (typeof setupContactForm === 'function') {
-                    setupContactForm();
-                }
-            });
-        }
-    }
+    setupContactForm();
 });
-
-// Função para carregar scripts dinamicamente
-function loadScript(src, callback) {
-    const script = document.createElement('script');
-    script.src = src;
-    script.type = 'text/javascript';
-    
-    script.onload = function() {
-        if (callback) callback();
-    };
-    
-    script.onerror = function() {
-        console.error('Erro ao carregar o script: ' + src);
-    };
-    
-    document.head.appendChild(script);
-}
 
 function setupMobileMenu(){
     const menuToggle = document.querySelector('.menu-toggle');
@@ -60,7 +27,7 @@ function setupMobileMenu(){
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     }
 })}};
-
+    // ===== TEMA CLARO/ESCURO =====
 function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
@@ -91,7 +58,7 @@ function updateThemeButton(theme) {
             : '<i class="fas fa-moon"></i> Modo escuro';
     }
 }
-
+// ===== PÁGINA ATUAL NO MENU =====
 function setupCurrentPage() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav a');
@@ -110,6 +77,48 @@ function setupCurrentPage() {
         }
     });
 }
+
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
+                submitBtn.style.background = '#10b981';
+                form.reset();
+            } else {
+                throw new Error('Erro no envio');
+            }
+        } catch (error) {
+            submitBtn.innerHTML = 'Erro ao enviar';
+            submitBtn.style.background = '#ef4444';
+        }
+
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            submitBtn.style.background = '';
+        }, 3000);
+    });
+}
+
 
 // ===== EXPORT =====
 window.Safira = window.Safira || {};

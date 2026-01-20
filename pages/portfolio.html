@@ -15,15 +15,25 @@
     <title>Portfólio | Safira Digital</title>
     <meta name="description" content="Portfólio de projetos desenvolvidos pela Safira Digital: sites, aplicativos e jogos.">
     
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="../pages.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../pages.css"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    as = "style" onload = "this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class = "header-content">
                 <a href="../index.html" class="logo-link">
-                    <img src="../images/Logo.png" alt="Safira Digital" class="logo-img">
+                    <img 
+                        src="../images/Logo.webp"
+                        alt="Safira Digital"
+                        class="logo-img"
+                        width="32"
+                        height="32"
+                        loading="lazy"
+                        >
                     <span>Safira Digital</span>
                 </a>
 
@@ -94,7 +104,14 @@
             <div class="footer-content">
                 <div>
                     <a href="../index.html" class="logo-link">
-                        <img src="../images/Logo.png" alt="Safira Digital" class="logo-img">
+                        <img 
+                        src="../images/Logo.webp"
+                        alt="Safira Digital"
+                        class="logo-img"
+                        width="32"
+                        height="32"
+                        loading="lazy"
+                        >
                         <span>Safira Digital</span>
                     </a>
                     <p style="margin-top: 1rem; color:var(--gray);">Software inteligente desde 2026</p>
