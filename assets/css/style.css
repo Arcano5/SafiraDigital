@@ -7,7 +7,7 @@ img{max-width:100%}
 /* HEADER */
 .header{border-bottom:1px solid #eee}
 .header-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
-.logo{height:36px}
+.logo{height:100px}
 .menu-toggle{font-size:1.8rem;background:none;border:none}
 
 /* NAV MOBILE */
@@ -29,8 +29,53 @@ img{max-width:100%}
 .section-subtitle{margin:1rem 0 2rem;color:#555}
 
 /* GRID */
-.grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
-.card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+  align-items: stretch;
+}
+
+.card {
+  background: #fff;
+  padding: 1.6rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  height: 100%;
+}
+
+/* Cabeçalho do card */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Ícone */
+.card-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* Título */
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Texto */
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
 
 /* STEPS */
 .steps{display:grid;grid-template-columns:1fr;gap:1.5rem}
