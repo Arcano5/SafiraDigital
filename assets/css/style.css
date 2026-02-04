@@ -1,0 +1,58 @@
+/* RESET + BASE */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.6}
+.container{max-width:1100px;margin:auto;padding:0 1rem}
+img{max-width:100%}
+
+/* HEADER */
+.header{border-bottom:1px solid #eee}
+.header-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{height:36px}
+.menu-toggle{font-size:1.8rem;background:none;border:none}
+
+/* NAV MOBILE */
+.nav{display:none;flex-direction:column;position:absolute;top:64px;left:0;width:100%;background:#fff}
+.nav a{padding:1rem;border-bottom:1px solid #eee}
+.nav.open{display:flex}
+
+/* HERO */
+.hero{background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);color:#fff;padding:4rem 1rem;text-align:center}
+.hero-actions{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* BUTTONS */
+.btn-primary{background:#25d366;color:#fff;padding:.9rem 1.6rem;border-radius:6px;font-weight:700}
+.btn-outline{border:2px solid #25d366;color:#25d366;padding:.8rem 1.5rem;border-radius:6px}
+
+/* SECTIONS */
+.section{padding:3rem 0}
+.section.dark{background:#f5f5f5}
+.section-subtitle{margin:1rem 0 2rem;color:#555}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.step span{font-size:2rem;color:#25d366}
+
+/* CTA */
+.cta{background:#25d366;color:#fff;text-align:center;padding:4rem 1rem}
+
+/* FOOTER */
+.footer{text-align:center;padding:1.5rem;background:#111;color:#fff}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px}
+
+/* ANIMAÇÕES */
+[data-animate]{opacity:0;transform:translateY(30px);transition:.8s}
+[data-animate].animate{opacity:1;transform:none}
+
+/* DESKTOP */
+@media(min-width:768px){
+  .menu-toggle{display:none}
+  .nav{display:flex;position:static;flex-direction:row;background:none;width:auto;gap:1.5rem}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr)}
+}

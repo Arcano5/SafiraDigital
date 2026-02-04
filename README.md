@@ -43,3 +43,7 @@ As melhorias com maior impacto foram a otimização das imagens e a redução de
 
 
 Durante as otimizações iniciais, observou-se uma piora na pontuação de Performance devido ao aumento do Cumulative Layout Shift (CLS), causado principalmente por lazy loading aplicado indevidamente e animações não otimizadas. Após a correção desses pontos, houve estabilização do layout e melhoria significativa da experiência do usuário.
+
+
+04/02
+Resolvi enxugar tudo e fazer um site one page
