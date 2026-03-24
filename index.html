@@ -1,171 +1,316 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W7JNNX33');</script>
-<!-- End Google Tag Manager -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Safira Digital</title>
-  <link rel="icon" href="/images/assets/favicon.svg" type="image/svg+xml">
-  <meta name="description" content="A Safira Digital ajuda empresas locais a crescerem com marketing digital, sites profissionais e presença online estratégica no Alto Tietê.">
-  <meta name="author" content="Safira Digital">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="marketing digital itaquaquecetuba, tráfego pago poá, agência digital suzano">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- INFORMAÇÕES BÁSICAS DA PÁGINA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- TÍTULO QUE APARECE NA ABA DO NAVEGADOR -->
+    <title>Safira Digital | Consultoria Empresarial para PMEs, Treinamentos e Cursos Online</title>
+    
+    <!-- SEO: DESCRIÇÃO QUE APARECE NO GOOGLE -->
+    <meta name="description" content="Consultoria empresarial para PMEs, treinamentos in company, jogos educativos e ferramentas de gestão. Transforme seu negócio com quem ensina na prática.">
+    
+    <!-- SEO: PALAVRAS-CHAVE PARA BUSCA -->
+    <meta name="keywords" content="consultoria empresarial, PME, gestão de estoque, fluxo de caixa, treinamento in company, cursos online, jogos educativos, Kanban, 5S, gestão empresarial">
+    
+    <!-- SEO: AUTOR DO CONTEÚDO -->
+    <meta name="author" content="Safira Digital">
+    
+    <!-- SEO: PERMITE QUE O GOOGLE INDEXE A PÁGINA -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- COMPARTILHAMENTO EM REDES SOCIAIS (OPEN GRAPH) -->
+    <meta property="og:title" content="Safira Digital | Consultoria Empresarial para PMEs">
+    <meta property="og:description" content="Consultoria, treinamentos, ferramentas e cursos para empresas que querem crescer com inteligência.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/logo.png">
+    
+    <!-- ÍCONE DA ABA DO NAVEGADOR (FAVICON) -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+    
+    <!-- ARQUIVO DE ESTILOS CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7JNNX33"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-inner">
-    <img src="/assets/images/logo2.webp" alt="Safira Digital" class="logo">
-
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-
-    <nav class="nav">
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" data-animate>
-  <div class="container hero-content">
-    <h1>Marketing Digital que se Paga Sozinho</h1>
-    <p>
-      Estratégias digitais focadas em resultado real para empresas de Itaquaquecetuba
-      e região do Alto Tietê.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#contato" class="btn-primary">Diagnóstico Gratuito</a>
-      <a href="https://wa.me/5511992095721" class="btn-outline">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- SERVIÇOS -->
-<section class="section" id="servicos" data-animate>
-  <div class="container">
-    <h2>Quem Atendemos</h2>
-    <p class="section-subtitle">Especialistas em negócios locais</p>
-
-    <div class="grid">
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">🏥</span>
-          <h3>Clínicas e Estética</h3>
+    <!-- ==================== CABEÇALHO ==================== -->
+    <!-- FIXO NO TOPO, CONTÉM LOGO E MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="container header-container">
+            <!-- LOGO DA EMPRESA -->
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Safira Digital - Logo">
+            </div>
+            
+            <!-- MENU DE NAVEGAÇÃO - LINKS ÂNCORA PARA CADA SEÇÃO -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <!-- BOTÃO DO MENU HAMBÚRGUER (APARECE APENAS NO CELULAR) -->
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
         </div>
-        <p>
-          Cansou de investir em Instagram mas os agendamentos não aparecem?
-          Criamos campanhas locais que levam clientes direto para o WhatsApp.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">🍽️</span>
-          <h3>Restaurantes e Delivery</h3>
+    </header>
+
+    <!-- ==================== SEÇÃO HERO ==================== -->
+    <!-- PRIMEIRA IMPRESSÃO DO SITE, CHAMADA PRINCIPAL -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1>Consultoria que ensina, <span class="highlight">ensino que transforma</span>.</h1>
+            <p class="hero-subtitle">Consultoria, treinamentos, ferramentas e cursos para empresas que querem crescer com inteligência.</p>
+            <a href="https://wa.me/5511992095721" class="btn btn-primary" target="_blank" rel="noreferrer">
+                📱 Falar com comercial
+            </a>
         </div>
-        <p>
-          Pagando até 30% de taxa no iFood?
-          Otimizamos seu ranking e criamos estratégias para trazer clientes pro seu canal direto.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">🏭</span>
-          <h3>Indústrias e Serviços</h3>
+    </section>
+
+    <!-- ==================== SEÇÃO SOBRE ==================== -->
+    <!-- APRESENTAÇÃO DA EMPRESA: MISSÃO, VISÃO, VALORES -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre a <span class="highlight">Safira Digital</span></h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p><strong>Missão:</strong> Capacitar empresas para o crescimento sustentável unindo otimização de processos e estratégias de alta performance.</p>
+                    <p><strong>Visão:</strong> Ser a principal referência em consultoria educacional para PMEs no Brasil, reconhecida por transformar negócios através do conhecimento aplicado.</p>
+                    <p><strong>Valores:</strong><br>
+                        <strong>Educação:</strong> Conhecimento que empodera e transforma;<br>
+                        <strong>Sustentabilidade:</strong> Crescimento sólido, sem atalhos;<br>
+                        <strong>Otimização:</strong> Fazer mais com menos, sempre;<br>
+                        <strong>Orientação a Dados:</strong> Decisões baseadas em evidências, não em achismos;<br>
+                        <strong>Pragmatismo:</strong> Soluções que funcionam na prática; e<br>
+                        <strong>Integridade Financeira:</strong> Transparência total em cada entrega.
+                    </p>
+                </div>
+            </div>
         </div>
-        <p>
-          Seu site é lento ou não aparece no Google Maps?
-          Corrigimos o que está afastando clientes antes deles te conhecerem.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">🚚</span>
-          <h3>Logística</h3>
+    </section>
+
+    <!-- ==================== SEÇÃO EQUIPE ==================== -->
+    <!-- APRESENTAÇÃO DOS MEMBROS DA EQUIPE -->
+    <section id="equipe" class="equipe">
+        <div class="container">
+            <h2 class="section-title">Nossa <span class="highlight">Equipe</span></h2>
+            <div class="equipe-grid">
+                <!-- CARD INDIVIDUAL DE CADA MEMBRO -->
+                <div class="membro-card">
+                    <div class="membro-imagem">
+                        <!-- LOCAL PARA VOCÊ COLOCAR A FOTO -->
+                        <img src="assets/images/leo.webp" alt="Leonildo Freitas Gomes">
+                    </div>
+                    <h3>Leonildo Freitas Gomes</h3>
+                    <p class="membro-cargo">Fundador | Mestre em Engenharia de Produção</p>
+                    <p class="membro-descricao">
+                        Mestre em Engenharia de Produção, professor e desenvolvedor Full Stack.
+                        Fundou a Safira Digital para unir tecnologia, educação e gestão — transformando problemas reais em soluções escaláveis para empresas e pessoas.
+                    </p>
+                    <a href="https://www.linkedin.com/in/leonildo-freitas-gomes-059a3627b" class="btn-linkedin" target="_blank" rel="noreferrer">LinkedIn →</a>
+                </div>
+                <!-- ADICIONE MAIS CARDS AQUI QUANDO A EQUIPE CRESCER -->
+            </div>
         </div>
-        <p>
-          Otimizamos rotas e identificamos zonas quentes de demanda para reduzir custos operacionais através de dados.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- PROCESSO -->
-<section class="section dark" data-animate>
-  <div class="container">
-    <h2>Como Trabalhamos</h2>
+    <!-- ==================== SEÇÃO SERVIÇOS ==================== -->
+    <!-- LISTA DOS SERVIÇOS OFERECIDOS EM FORMATO DE CARDS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos <span class="highlight">Serviços</span></h2>
+            <div class="servicos-grid">
+                
+                <!-- SERVIÇO 1 - COPIE ESTE BLOCO PARA CADA NOVO SERVIÇO -->
+                <div class="servico-card">
+                    <!-- LOCAL: COLOQUE A IMAGEM DO SERVIÇO AQUI -->
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico1.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Consultoria para PMEs</h3>
+                    <p>Consultoria empresarial para PMEs com foco em processos, gestão e tecnologia.
+                      Soluções sob medida para o porte e desafio da sua empresa.</p>
+                </div>
+                <!-- FIM DO SERVIÇO 1 -->
+                
+                <!-- SERVIÇO 2 -->
+                <div class="servico-card">
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico2.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Jogos Educativos</h3>
+                    <p>
+                      Aprenda gestão empresarial jogando.
+                      Nossos simuladores criam situações reais e imprevisíveis,
+                      desenvolvendo habilidades de liderança, estoque e tomada de decisão em qualquer nível.
+                    </p>
+                </div>
+                <!-- FIM DO SERVIÇO 2 -->
+                
+                <!-- SERVIÇO 3 -->
+                <div class="servico-card">
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico3.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Cursos Online</h3>
+                    <p>Conteúdo gratuito no YouTube e simulados completos no Udemy.
+                      Aprenda no seu ritmo, teste seus conhecimentos e avance na carreira ou nos estudos.</p>
+                </div>
+                <!-- FIM DO SERVIÇO 3 -->
+                
+                <!-- SERVIÇO 4 -->
+                <div class="servico-card">
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico4.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Ferramentas</h3>
+                    <p>Planilhas de gestão empresarial para controle de estoque, fluxo de caixa, precificação e impostos.
+                      Ferramentas acessíveis para organizar e escalar seu negócio.</p>
+                    <a href="https://safira-digital-antiats.streamlit.app" class="card-link" target="_blank" rel="noreferrer">Testar grátis →</a>
+                </div>
+                <!-- FIM DO SERVIÇO 4 -->
+                
+                <!-- SERVIÇO 5 -->
+                <div class="servico-card">
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico5.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Treinamentos In Company</h3>
+                    <p>Não terceirizamos o conhecimento — transferimos ele.
+                      Treinamentos presenciais ou remotos em gestão de estoque, fluxo de caixa, Kanban, 5S e muito mais.
+                      Sua equipe aprende, aplica e evolui.</p>
+                </div>
+                <!-- FIM DO SERVIÇO 5 -->
+                
+                <!-- SERVIÇO 6 -->
+                <div class="servico-card">
+                    <div class="servico-imagem">
+                        <img src="assets/images/servicos/servico6.jpg" alt="Nome do serviço">
+                    </div>
+                    <h3>Gestão Empresarial</h3>
+                    <p>Sem tempo para gerir tudo? Terceirizamos setores estratégicos da sua empresa — financeiro, operacional, administrativo.
+                      Gestão profissional, resultado concreto, sem o custo de uma equipe interna.</p>
+                </div>
+                <!-- FIM DO SERVIÇO 6 -->
+                
+            </div>
+        </div>
+    </section>
 
-    <div class="steps">
-      <div class="step"><span>1</span><p><strong>Diagnóstico</strong><br> Raio-X completo da sua presença digital: o que funciona, o que queima dinheiro e onde estão as oportunidades.</p></div>
-      <div class="step"><span>2</span><p><strong>Estratégia</strong><br>Plano personalizado com metas claras. Cada ação precisa justificar seu retorno financeiro.</p></div>
-      <div class="step"><span>3</span><p><strong>Execução</strong><br>Implementamos landing pages, tráfego pago local e otimização de plataformas com acompanhamento semanal.</p></div>
-      <div class="step"><span>4</span><p><strong>Resultados</strong><br>Dashboards que mostram de onde vêm seus clientes e quanto cada canal está gerando de retorno.</p></div>
-    </div>
-  </div>
-</section>
+    <!-- ==================== SEÇÃO PORTFÓLIO ==================== -->
+    <!-- PROJETOS REALIZADOS EM FORMATO DE CARROSSEL -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Nosso <span class="highlight">Portfólio</span></h2>
+            <p class="portfolio-subtitle">Conheça alguns dos nossos projetos</p>
+            
+            <!-- ESTRUTURA DO CARROSSEL -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Anterior">❮</button>
+                
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <!-- PROJETO 1 - COPIE ESTE BLOCO PARA CADA NOVO PROJETO -->
+                        <div class="carousel-card">
+                            <div class="portfolio-imagem">
+                                <!-- LOCAL: COLOQUE A IMAGEM DO PROJETO AQUI -->
+                                <img src="assets/images/portfolio/projeto1.webp" alt="Nome do projeto">
+                            </div>
+                            <h3>Site da Associação Vestibulandos da Cidadania</h3>
+                            <p>Como consultor, auxiliei a associação na redução de custos operacionais fixos, migrando o site institucional de uma plataforma paga para o Google Sites. O objetivo foi manter a integridade das informações e a visibilidade digital do cursinho de forma simplificada e totalmente gratuita.</p>
+                            <p>Tecnologias: Google Sites, HTML5, CSS3, ECMAScript 6</p>
+                            <a href="https://sites.google.com/view/vestibulandos-da-cidadania/in%C3%ADcio?authuser=1" class="portfolio-link" target="_blank" rel="noreferrer">Ver projeto →</a>
+                        </div>
+                        <!-- FIM DO PROJETO 1 -->
+                        
+                        <!-- PROJETO 2 -->
+                        <div class="carousel-card">
+                            <div class="portfolio-imagem">
+                                <img src="assets/images/portfolio/projeto2.jpg" alt="Nome do projeto">
+                            </div>
+                            <h3>Nome do Projeto</h3>
+                            <p>LOCAL PARA VOCÊ COLOCAR A DESCRIÇÃO DO PROJETO</p>
+                            <a href="#" class="portfolio-link" target="_blank" rel="noreferrer">Ver projeto →</a>
+                        </div>
+                        <!-- FIM DO PROJETO 2 -->
+                        
+                        <!-- PROJETO 3 -->
+                        <div class="carousel-card">
+                            <div class="portfolio-imagem">
+                                <img src="assets/images/portfolio/projeto3.jpg" alt="Nome do projeto">
+                            </div>
+                            <h3>Nome do Projeto</h3>
+                            <p>LOCAL PARA VOCÊ COLOCAR A DESCRIÇÃO DO PROJETO</p>
+                            <a href="#" class="portfolio-link" target="_blank" rel="noreferrer">Ver projeto →</a>
+                        </div>
+                        <!-- FIM DO PROJETO 3 -->
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" aria-label="Próximo">❯</button>
+            </div>
+            
+            <!-- INDICADORES DO CARROSSEL (BOLINHAS) -->
+            <div class="carousel-nav">
+                <button class="carousel-indicator active"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+    </section>
 
-<!-- CTA -->
-<section class="cta" data-animate>
-  <div class="container">
-    <h2>Vamos gerar clientes para seu negócio?</h2>
-    <a href="https://wa.me/5511992095721" class="btn-primary large">
-      <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-    </a>
-  </div>
-</section>
+    <!-- ==================== SEÇÃO CONTATO ==================== -->
+    <!-- CHAMADA PARA AÇÃO, REDIRECIONA PARA WHATSAPP -->
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <h2 class="section-title">Solicite <span class="highlight">cotação</span></h2>
+            <p>Pronto para transformar sua gestão? Entre em contato e receba uma proposta personalizada para o seu negócio.</p>
+            <a href="https://wa.me/5511992095721" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                📱 Falar com comercial
+            </a>
+            <p class="contato-email">ou envie um e-mail: <strong>contato@safira.digital</strong></p>
+        </div>
+    </section>
 
-<!-- CONTATO -->
-<section class="section" id="contato" data-animate>
-  <div class="container">
-    <h2>Contato</h2>
-    <p class="section-subtitle">Conversa gratuita de 30 minutos</p>
-    <a href="https://wa.me/5511992095721" class="btn-primary">
-      <i class="fab fa-whatsapp"></i> Iniciar Conversa
-    </a>
-  </div>
-</section>
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <img src="assets/images/logo.png" alt="Safira Digital" class="footer-logo">
+                <p>Consultoria que ensina, ensino que transforma.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Consultoria PMEs</li>
+                        <li>Jogos Educativos</li>
+                        <li>Cursos Online</li>
+                        <li>Ferramentas</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>contato@safira.digital</li>
+                        <li>(11) 99999-9999</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Safira Digital - CNPJ 00.000.000/0001-00</p>
+                <p>© 2026 Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>&copy; 2026 Safira Digital. Todos os direitos reservados.</p>
-</footer>
-
-<!-- BOTÃO WHATSAPP -->
-<a href="https://wa.me/5511992095721" class="whatsapp-float" aria-label="WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<script src="assets/js/script.js"></script>
-
-<!-- SEO LOCAL -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Safira Digital",
-  "areaServed": "Alto Tietê",
-  "sameAs": ["https://www.linkedin.com/company/safiradigital"]
-}
-</script>
-
+    <!-- ARQUIVO DE JAVASCRIPT -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
