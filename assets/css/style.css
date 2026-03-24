@@ -256,16 +256,19 @@ header {
     transform: translateY(-5px);
 }
 
+/* ÍCONES DOS SERVIÇOS */
+.servico-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    text-align: center;
+    padding: 1.5rem 0 0.5rem;
+}
+
+/* Se quiser manter suporte para imagens também */
 .servico-imagem {
     width: 100%;
     height: 200px;
     overflow: hidden;
-}
-
-.servico-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .servico-card h3 {
@@ -531,5 +534,40 @@ footer {
     
     .servicos-grid {
         grid-template-columns: 1fr;
+    }
+}
+/* ==================== WHATSAPP FLUTUANTE ==================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background 0.2s;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    background-color: #128C7E;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        bottom: 20px;
+        right: 20px;
     }
 }
