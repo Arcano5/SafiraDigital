@@ -1,79 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W7JNNX33');</script>
-    <!-- End Google Tag Manager -->     
-    
-    <!-- INFORMAÇÕES BÁSICAS DA PÁGINA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <!-- TÍTULO QUE APARECE NA ABA DO NAVEGADOR -->
     <title>Safira Digital | Consultoria Empresarial para PMEs, Treinamentos e Cursos Online</title>
     
-    <!-- SEO: DESCRIÇÃO QUE APARECE NO GOOGLE -->
     <meta name="description" content="Consultoria empresarial para PMEs, treinamentos in company, jogos educativos e ferramentas de gestão. Transforme seu negócio com quem ensina na prática.">
-    
-    <!-- SEO: PALAVRAS-CHAVE PARA BUSCA -->
     <meta name="keywords" content="consultoria empresarial, PME, gestão de estoque, fluxo de caixa, treinamento in company, cursos online, jogos educativos, Kanban, 5S, gestão empresarial">
-    
-    <!-- SEO: AUTOR DO CONTEÚDO -->
     <meta name="author" content="Safira Digital">
-    
-    <!-- SEO: PERMITE QUE O GOOGLE INDEXE A PÁGINA -->
     <meta name="robots" content="index, follow">
     
-    <!-- COMPARTILHAMENTO EM REDES SOCIAIS (OPEN GRAPH) -->
     <meta property="og:title" content="Safira Digital | Consultoria Empresarial para PMEs">
     <meta property="og:description" content="Consultoria, treinamentos, ferramentas e cursos para empresas que querem crescer com inteligência.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.webp">
+    <meta property="og:url" content="https://areano5.github.io/SafiraDigital/">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- ÍCONE DA ABA DO NAVEGADOR (FAVICON) -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
     
-    <!-- ARQUIVO DE ESTILOS CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Pré-conexão para otimizar carregamento externo -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS carregado de forma otimizada (não bloqueia renderização) -->
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+    
+    <!-- Google Tag Manager movido para o final do body (não bloqueia renderização) -->
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7JNNX33"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+    <!-- Google Tag Manager (noscript) - movido para depois do conteúdo principal -->
+    
     <!-- ==================== CABEÇALHO ==================== -->
-    <!-- FIXO NO TOPO, CONTÉM LOGO E MENU DE NAVEGAÇÃO -->
     <header>
         <div class="container header-container">
-            <!-- LOGO DA EMPRESA -->
             <div class="logo">
-                <img src="assets/images/logo.png" alt="Safira Digital - Logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.webp" alt="Safira Digital - Logo" width="150" height="50" loading="eager">
+                </a>
             </div>
             
-            <!-- MENU DE NAVEGAÇÃO - LINKS ÂNCORA PARA CADA SEÇÃO -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#equipe">Equipe</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="assets/pages/servicos.html">Serviços</a></li>
+                    <li><a href="assets/pages/portfolio.html">Portfólio</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             
-            <!-- BOTÃO DO MENU HAMBÚRGUER (APARECE APENAS NO CELULAR) -->
             <button class="menu-toggle" aria-label="Abrir menu">☰</button>
         </div>
     </header>
 
     <!-- ==================== SEÇÃO HERO ==================== -->
-    <!-- PRIMEIRA IMPRESSÃO DO SITE, CHAMADA PRINCIPAL -->
     <section class="hero">
         <div class="container hero-container">
             <h1>Consultoria que ensina, <span class="highlight">ensino que transforma</span>.</h1>
@@ -85,7 +67,6 @@
     </section>
 
     <!-- ==================== SEÇÃO SOBRE ==================== -->
-    <!-- APRESENTAÇÃO DA EMPRESA: MISSÃO, VISÃO, VALORES -->
     <section id="sobre" class="sobre">
         <div class="container">
             <h2 class="section-title">Sobre a <span class="highlight">Safira Digital</span></h2>
@@ -107,16 +88,13 @@
     </section>
 
     <!-- ==================== SEÇÃO EQUIPE ==================== -->
-    <!-- APRESENTAÇÃO DOS MEMBROS DA EQUIPE -->
     <section id="equipe" class="equipe">
         <div class="container">
             <h2 class="section-title">Nossa <span class="highlight">Equipe</span></h2>
             <div class="equipe-grid">
-                <!-- CARD INDIVIDUAL DE CADA MEMBRO -->
                 <div class="membro-card">
                     <div class="membro-imagem">
-                        <!-- LOCAL PARA VOCÊ COLOCAR A FOTO -->
-                        <img src="assets/images/leo.webp" alt="Leonildo Freitas Gomes">
+                        <img src="assets/images/leo.webp" alt="Leonildo Freitas Gomes" width="200" height="200" loading="lazy">
                     </div>
                     <h3>Leonildo Freitas Gomes</h3>
                     <p class="membro-cargo">Fundador | Mestre em Engenharia de Produção</p>
@@ -126,148 +104,115 @@
                     </p>
                     <a href="https://www.linkedin.com/in/leonildo-freitas-gomes-059a3627b" class="btn-linkedin" target="_blank" rel="noreferrer">LinkedIn →</a>
                 </div>
-                <!-- ADICIONE MAIS CARDS AQUI QUANDO A EQUIPE CRESCER -->
             </div>
         </div>
     </section>
 
     <!-- ==================== SEÇÃO SERVIÇOS ==================== -->
-    <!-- LISTA DOS SERVIÇOS OFERECIDOS EM FORMATO DE CARDS -->
     <section id="servicos" class="servicos">
         <div class="container">
             <h2 class="section-title">Nossos <span class="highlight">Serviços</span></h2>
             <div class="servicos-grid">
                 
-                <!-- SERVIÇO 1 - COPIE ESTE BLOCO PARA CADA NOVO SERVIÇO -->
                 <div class="servico-card">
-                    <!-- LOCAL: COLOQUE A IMAGEM DO SERVIÇO AQUI -->
                     <div class="servico-icon">
                         <i class="fa-solid fa-handshake-angle"></i>
                     </div>
                     <h3>Consultoria para PMEs</h3>
-                    <p>Consultoria empresarial para PMEs com foco em processos, gestão e tecnologia.
-                      Soluções sob medida para o porte e desafio da sua empresa.</p>
+                    <p>Consultoria empresarial para PMEs com foco em processos, gestão e tecnologia. Soluções sob medida para o porte e desafio da sua empresa.</p>
                 </div>
-                <!-- FIM DO SERVIÇO 1 -->
                 
-                <!-- SERVIÇO 2 -->
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fa-solid fa-gamepad"></i>
                     </div>
                     <h3>Jogos Educativos</h3>
-                    <p>
-                      Aprenda gestão empresarial jogando.
-                      Nossos simuladores criam situações reais e imprevisíveis,
-                      desenvolvendo habilidades de liderança, estoque e tomada de decisão em qualquer nível.
-                    </p>
+                    <p>Aprenda gestão empresarial jogando. Nossos simuladores criam situações reais e imprevisíveis, desenvolvendo habilidades de liderança, estoque e tomada de decisão em qualquer nível.</p>
                 </div>
-                <!-- FIM DO SERVIÇO 2 -->
                 
-                <!-- SERVIÇO 3 -->
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fa-solid fa-book"></i>
                     </div>
                     <h3>Cursos Online</h3>
-                    <p>Conteúdo gratuito no YouTube e simulados completos no Udemy.
-                      Aprenda no seu ritmo, teste seus conhecimentos e avance na carreira ou nos estudos.</p>
+                    <p>Conteúdo gratuito no YouTube e simulados completos no Udemy. Aprenda no seu ritmo, teste seus conhecimentos e avance na carreira ou nos estudos.</p>
                 </div>
-                <!-- FIM DO SERVIÇO 3 -->
                 
-                <!-- SERVIÇO 4 -->
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fa-solid fa-toolbox"></i>
                     </div>
                     <h3>Ferramentas</h3>
-                    <p>Planilhas de gestão empresarial para controle de estoque, fluxo de caixa, precificação e impostos.
-                      Ferramentas acessíveis para organizar e escalar seu negócio.</p>
-                    <a href="https://safira-digital-antiats.streamlit.app" class="card-link" target="_blank" rel="noreferrer">Testar grátis →</a>
+                    <p>Planilhas de gestão empresarial para controle de estoque, fluxo de caixa, precificação e impostos. Ferramentas acessíveis para organizar e escalar seu negócio.</p>
+                    <a href="assets/pages/ferramentas.html" class="card-link">Saiba mais →</a>
                 </div>
-                <!-- FIM DO SERVIÇO 4 -->
                 
-                <!-- SERVIÇO 5 -->
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fa-solid fa-chart-gantt"></i>
                     </div>
                     <h3>Treinamentos In Company</h3>
-                    <p>Não terceirizamos o conhecimento — transferimos ele.
-                      Treinamentos presenciais ou remotos em gestão de estoque, fluxo de caixa, Kanban, 5S e muito mais.
-                      Sua equipe aprende, aplica e evolui.</p>
+                    <p>Não terceirizamos o conhecimento — transferimos ele. Treinamentos presenciais ou remotos em gestão de estoque, fluxo de caixa, Kanban, 5S e muito mais. Sua equipe aprende, aplica e evolui.</p>
                 </div>
-                <!-- FIM DO SERVIÇO 5 -->
                 
-                <!-- SERVIÇO 6 -->
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fa-solid fa-list-check"></i>
                     </div>
                     <h3>Gestão Empresarial</h3>
-                    <p>Sem tempo para gerir tudo? Terceirizamos setores estratégicos da sua empresa — financeiro, operacional, administrativo.
-                      Gestão profissional, resultado concreto, sem o custo de uma equipe interna.</p>
+                    <p>Sem tempo para gerir tudo? Terceirizamos setores estratégicos da sua empresa — financeiro, operacional, administrativo. Gestão profissional, resultado concreto, sem o custo de uma equipe interna.</p>
                 </div>
-                <!-- FIM DO SERVIÇO 6 -->
                 
             </div>
         </div>
     </section>
 
     <!-- ==================== SEÇÃO PORTFÓLIO ==================== -->
-    <!-- PROJETOS REALIZADOS EM FORMATO DE CARROSSEL -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Nosso <span class="highlight">Portfólio</span></h2>
             <p class="portfolio-subtitle">Conheça alguns dos nossos projetos</p>
             
-            <!-- ESTRUTURA DO CARROSSEL -->
             <div class="carousel-container">
                 <button class="carousel-btn prev" aria-label="Anterior">❮</button>
                 
                 <div class="carousel-track-container">
                     <div class="carousel-track">
-                        <!-- PROJETO 1 - COPIE ESTE BLOCO PARA CADA NOVO PROJETO -->
+                        
                         <div class="carousel-card">
                             <div class="portfolio-imagem">
-                                <!-- LOCAL: COLOQUE A IMAGEM DO PROJETO AQUI -->
-                                <img src="assets/images/portfolio/projeto1.webp" alt="Nome do projeto">
+                                <img src="assets/images/portfolio/projeto1.webp" alt="Site da Associação Vestibulandos da Cidadania" width="300" height="200" loading="lazy">
                             </div>
                             <h3>Site da Associação Vestibulandos da Cidadania</h3>
                             <p>Como consultor, auxiliei a associação na redução de custos operacionais fixos, migrando o site institucional de uma plataforma paga para o Google Sites. O objetivo foi manter a integridade das informações e a visibilidade digital do cursinho de forma simplificada e totalmente gratuita.</p>
                             <p>Tecnologias: Google Sites, HTML5, CSS3, ECMAScript 6</p>
                             <a href="https://sites.google.com/view/vestibulandos-da-cidadania/in%C3%ADcio?authuser=1" class="portfolio-link" target="_blank" rel="noreferrer">Ver projeto →</a>
                         </div>
-                        <!-- FIM DO PROJETO 1 -->
                         
-                        <!-- PROJETO 2 -->
                         <div class="carousel-card">
                             <div class="portfolio-imagem">
-                                <img src="assets/images/portfolio/projeto2.webp" alt="Nome do projeto">
+                                <img src="assets/images/portfolio/projeto2.webp" alt="Modelo de Site de Catálogo" width="300" height="200" loading="lazy">
                             </div>
-                            <h3>Modelo de Site de Catalogo</h3>
-                            <p>Pronto para ser a vitrine de seus produtos, botão de whatsapp sempre visível, totalmente customizavel.</p>
+                            <h3>Modelo de Site de Catálogo</h3>
+                            <p>Pronto para ser a vitrine de seus produtos, botão de WhatsApp sempre visível, totalmente customizável.</p>
                             <p>Tecnologias: HTML5, CSS3, ECMAScript 6, SEO básico.</p>
                             <a href="https://arcano5.github.io/Site-de-Catalogo/" class="portfolio-link" target="_blank" rel="noreferrer">Ver projeto →</a>
                         </div>
-                        <!-- FIM DO PROJETO 2 -->
+                        
                     </div>
                 </div>
                 
                 <button class="carousel-btn next" aria-label="Próximo">❯</button>
             </div>
             
-            <!-- INDICADORES DO CARROSSEL (BOLINHAS) -->
             <div class="carousel-nav">
                 <button class="carousel-indicator active"></button>
-                <button class="carousel-indicator"></button>
                 <button class="carousel-indicator"></button>
             </div>
         </div>
     </section>
 
     <!-- ==================== SEÇÃO CONTATO ==================== -->
-    <!-- CHAMADA PARA AÇÃO, REDIRECIONA PARA WHATSAPP -->
     <section id="contato" class="contato">
         <div class="container contato-container">
             <h2 class="section-title">Solicite <span class="highlight">cotação</span></h2>
@@ -275,9 +220,9 @@
             <a href="https://wa.me/5511992095721" class="btn btn-secondary" target="_blank" rel="noreferrer">
                 <i class="fab fa-whatsapp"></i> Falar com comercial
             </a>
-            <p class="contato-email">ou envie um e-mail: <strong>safira.digital.dev@gmail.com</strong></p>
         </div>
     </section>
+
     <!-- BOTÃO WHATSAPP FLUTUANTE -->
     <a href="https://wa.me/5511992095721?text=Olá! Gostaria de mais informações sobre os serviços da Safira Digital." 
     class="whatsapp-float" 
@@ -286,28 +231,19 @@
     aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
     <!-- ==================== RODAPÉ ==================== -->
     <footer>
         <div class="container footer-container">
             <div class="footer-info">
-                <img src="assets/images/logo.png" alt="Safira Digital" class="footer-logo">
+                <img src="assets/images/logo.webp" alt="Safira Digital" class="footer-logo" width="120" height="40" loading="lazy">
                 <p>Consultoria que ensina, ensino que transforma.</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li>Consultoria PMEs</li>
-                        <li>Jogos Educativos</li>
-                        <li>Cursos Online</li>
-                        <li>Ferramentas</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
                     <h4>Contato</h4>
                     <ul>
                         <li>safira.digital.dev@gmail.com</li>
-                        <li>(11) 99209-5721</li>
                     </ul>
                 </div>
             </div>
@@ -320,7 +256,22 @@
         </div>
     </footer>
 
-    <!-- ARQUIVO DE JAVASCRIPT -->
-    <script src="assets/js/script.js"></script>
+    <!-- Font Awesome (carregado async para não bloquear) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+
+    <!-- JavaScript (defer para não bloquear renderização) -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- Google Tag Manager movido para o final (não bloqueia renderização) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7JNNX33');</script>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7JNNX33"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 </html>

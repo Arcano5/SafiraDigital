@@ -1,49 +1,62 @@
-Primeira versão do meu site profissional
+# Safira Digital
 
-Tecnologias usadas:
-    HTML5: Estrutura;
-    CSS3: Aparência;
-    JavaScript ECMAScript: Funcionalidades;e
-    Formspree: EndPoint dos formulários.
+**Consultoria que ensina, ensino que transforma.**
 
+Site institucional da Safira Digital, uma consultoria empresarial focada em PMEs, oferecendo treinamentos, ferramentas de gestão, jogos educativos e cursos online.
 
-Segunda versão
+---
 
-    Google Analytics para monitorar índices
+## 🔗 Acesse o site
 
+https://arcano5.github.io/SafiraDigital/
 
+---
 
-Terceira versão
-20/01
+## 🛠️ Tecnologias utilizadas
 
-## Análise de Performance
-
-A performance do site foi analisada utilizando o Lighthouse do Chrome DevTools, com foco na categoria Performance em modo mobile.
-
-### Resultados iniciais
-- Performance: 80
-- Principais gargalos identificados:
-  - Imagens não otimizadas
-  - Recursos CSS bloqueando a renderização
-  - JavaScript e CSS não utilizados
-  - Ausência de dimensões explícitas em imagens
-
-### Otimizações aplicadas
-- Conversão de imagens para o formato `.webp`, com uso de `loading="lazy"` e definição de `width` e `height`
-- Redução de recursos bloqueantes utilizando preload de CSS
-- Separação de JavaScript por página, evitando carregamento desnecessário
-- Organização do CSS em arquivos distintos para homepage e páginas internas
-
-### Resultados após otimização
-- Performance: 88 (após otimizações)
-- Redução do tempo de First Contentful Paint e Largest Contentful Paint
-
-### Conclusão
-As melhorias com maior impacto foram a otimização das imagens e a redução de recursos bloqueantes, resultando em uma experiência mais rápida e estável para o usuário.
+| Tecnologia | Finalidade |
+|------------|------------|
+| HTML5 | Estrutura das páginas |
+| CSS3 | Estilização e responsividade (Mobile First) |
+| JavaScript | Menu hambúrguer, rolagem suave e carrossel |
+| Font Awesome 6 | Ícones vetoriais |
+| Google Tag Manager | Analytics e rastreamento |
+| GitHub Pages | Hospedagem estática |
 
 
-Durante as otimizações iniciais, observou-se uma piora na pontuação de Performance devido ao aumento do Cumulative Layout Shift (CLS), causado principalmente por lazy loading aplicado indevidamente e animações não otimizadas. Após a correção desses pontos, houve estabilização do layout e melhoria significativa da experiência do usuário.
+---
 
+## 🧭 Funcionalidades
 
-04/02
-Resolvi enxugar tudo e fazer um site one page
+- **Multi-page** com navegação entre páginas
+- **Menu responsivo** (hambúrguer no mobile)
+- **Rolagem suave** com offset para header fixo
+- **Carrossel** de projetos com indicadores e loop
+- **WhatsApp flutuante** em todas as páginas
+- **Design Mobile First** (otimizado para celulares e tablets)
+
+---
+
+## 📊 Performance (Lighthouse)
+
+O site foi otimizado para alcançar boas métricas:
+
+| Métrica | Meta |
+|---------|------|
+| LCP | < 2.5s |
+| CLS | < 0.1 |
+| Mobile First | ✅ |
+| Imagens WebP | ✅ |
+
+---
+
+## 📬 Contato
+
+- **E-mail:** safira.digital.dev@gmail.com
+- **WhatsApp:** (11) 99209-5721
+
+---
+
+## ©️ Licença
+
+Todos os direitos reservados - Safira Digital
