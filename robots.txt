@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arcano5.github.io/SafiraDigital/sitemap.xml

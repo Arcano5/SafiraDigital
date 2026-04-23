@@ -128,3 +128,26 @@ if (track) {
         });
     }
 }
+
+// Formspree feedback (opcional)
+const form = document.querySelector('.contato-form');
+if (form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+        const msgDiv = document.getElementById('form-msg');
+        if (response.ok) {
+            msgDiv.innerHTML = '✅ Mensagem enviada! Retornamos em breve.';
+            msgDiv.style.color = 'green';
+            form.reset();
+        } else {
+            msgDiv.innerHTML = '❌ Erro ao enviar. Tente novamente.';
+            msgDiv.style.color = 'red';
+        }
+    });
+}

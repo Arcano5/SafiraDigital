@@ -16,6 +16,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/logo.webp">
     <meta property="og:url" content="https://areano5.github.io/SafiraDigital/">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="assets/images/logo-192.webp">
+    <meta name="theme-color" content="#0a5c7e">
     
     <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
     
@@ -48,6 +51,7 @@
                     <li><a href="assets/pages/servicos.html">Serviços</a></li>
                     <li><a href="assets/pages/portfolio.html">Portfólio</a></li>
                     <li><a href="#contato">Contato</a></li>
+                    <li><a href="assets/blog/bindex.html">Blog</a></li>
                 </ul>
             </nav>
             
@@ -216,10 +220,37 @@
     <section id="contato" class="contato">
         <div class="container contato-container">
             <h2 class="section-title">Solicite <span class="highlight">cotação</span></h2>
-            <p>Pronto para transformar sua gestão? Entre em contato e receba uma proposta personalizada para o seu negócio.</p>
-            <a href="https://wa.me/5511992095721" class="btn btn-secondary" target="_blank" rel="noreferrer">
-                <i class="fab fa-whatsapp"></i> Falar com comercial
-            </a>
+            <p>Preencha o formulário e retornamos em até 24h.</p>
+            
+            <form action="https://formspree.io/f/meeobbrq" method="POST" class="contato-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="(11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <select name="projeto" required>
+                            <option value="">Tipo de projeto</option>
+                            <option>Consultoria</option>
+                            <option>Treinamento</option>
+                            <option>Terceirização</option>
+                            <option>Software</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="mensagem" rows="5" placeholder="Descreva seu problema ou necessidade..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensagem →</button>
+                <p class="form-msg" id="form-msg"></p>
+            </form>
         </div>
     </section>
 
@@ -250,7 +281,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>Safira Digital - CNPJ 00.000.000/0001-00</p>
+                <p>Safira Digital - CNPJ 64.845.683/0001-60</p>
                 <p>© 2026 Todos os direitos reservados</p>
             </div>
         </div>
