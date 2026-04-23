@@ -5,7 +5,7 @@ function carregarDadosBlog() {
     // Detecta se está em bindex.html ou em um artigo
     const isHomeBlog = document.getElementById('blog-grid') !== null;
     
-    fetch('artigos-data.json')
+    fetch('../blog/artigos-data.json')
         .then(response => response.json())
         .then(artigos => {
             // Ordena por data (mais recente primeiro)
